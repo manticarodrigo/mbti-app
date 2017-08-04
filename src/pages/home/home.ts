@@ -16,7 +16,7 @@ export class HomePage {
     },
     "2": {
       q: "Are you more:",
-      r1: "observant and introspective",
+      r1: "observant than introspective",
       r2: "introspective than observant"
     },
     "3": {
@@ -75,6 +75,52 @@ export class HomePage {
       }
       if (i == 2) {
         this.iCount++;
+
+      }
+    }
+    if (this.step == 2) {
+      if (i == 1) {
+        this.sCount++;
+      }
+      if (i == 2) {
+        this.nCount++;
+
+      }
+    }
+    if (this.step == 3) {
+      if (i == 1) {
+        this.sCount++;
+      }
+      if (i == 2) {
+        this.nCount++;
+
+      }
+    }
+    if (this.step == 4) {
+      if (i == 1) {
+        this.tCount++;
+      }
+      if (i == 2) {
+        this.fCount++;
+
+      }
+    }
+    if (this.step == 5) {
+      if (i == 1) {
+        this.tCount++;
+      }
+      if (i == 2) {
+        this.fCount++;
+
+      }
+    }
+    if (this.step == 6) {
+      if (i == 1) {
+        this.jCount++;
+      }
+      if (i == 2) {
+        this.pCount++;
+
       }
     }
     if (this.step == 2) {
