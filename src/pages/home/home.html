@@ -6,6 +6,14 @@
 
 <ion-content>
   <h1 style="text-align:center;">{{responseMap[step].q}}</h1>
-  <button ion-button type="button" class="q-btn" id="q-1" (click)="respOnePressed()">{{responseMap[step].r1}}</button>
-  <button ion-button type="button" class="q-btn" id="q-2" (click)="respTwoPressed()">{{responseMap[step].r2}}</button>
+  <button ion-button type="button" class="q-btn" id="q-1" (click)="buttonPressed(1)">{{responseMap[step].r1}}</button>
+  <button ion-button type="button" class="q-btn" id="q-2" (click)="buttonPressed(2)">{{responseMap[step].r2}}</button>
+  <p>I: {{iCount}}</p>
+  <p>E: {{eCount}}</p>
+  <p>S: {{sCount}}</p>
+  <p>N: {{nCount}}</p>
+  <p>T: {{tCount}}</p>
+  <p>F: {{fCount}}</p>
+  <p>J: {{jCount}}</p>
+  <p>P: {{pCount}}</p>
 </ion-content>

@@ -41,25 +41,33 @@ export class HomePage {
     }
   }
 
+  iCount = 0;
+  eCount = 0;
+  sCount = 0;
+  nCount = 0;
+  tCount = 0;
+  fCount = 0;
+  jCount = 0;
+  pCount = 0;
+
   constructor(public navCtrl: NavController) {
 
   }
 
-  respOnePressed() {
-    console.log("resp one pressed");
+  buttonPressed(i) {
+    console.log("button " + i + "pressed");
     if (this.step < 6) {
       this.step++;
     } else {
       this.step = 1;
     }
-  }
-
-  respTwoPressed() {
-    console.log("resp two pressed");
-    if (this.step < 6) {
-      this.step++;
-    } else {
-      this.step = 1;
+    if (this.step == 1) {
+      if (i == 1) {
+        this.eCount++;
+      }
+      if (i == 2) {
+        this.iCount++;
+      }
     }
   }
 
