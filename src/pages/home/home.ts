@@ -60,6 +60,14 @@ export class HomePage {
       this.step++;
     } else {
       this.step = 1;
+      this.iCount = 0;
+      this.eCount = 0;
+      this.sCount = 0;
+      this.nCount = 0;
+      this.tCount = 0;
+      this.fCount = 0;
+      this.jCount = 0;
+      this.pCount = 0;
     }
     if (this.step == 1) {
       if (i == 1) {
@@ -67,6 +75,22 @@ export class HomePage {
       }
       if (i == 2) {
         this.iCount++;
+      }
+    }
+    if (this.step == 2) {
+      if (i == 1) {
+        this.sCount++;
+      }
+      if (i == 2) {
+        this.nCount++;
+      }
+    }
+    if (this.step == 3) {
+      if (i == 1) {
+        this.sCount++;
+      }
+      if (i == 2) {
+        this.nCount++;
       }
     }
   }
