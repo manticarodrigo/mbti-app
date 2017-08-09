@@ -8,12 +8,8 @@
   <h1 style="text-align:center;">{{responseMap[step].q}}</h1>
   <button ion-button type="button" class="q-btn" id="q-1" (click)="buttonPressed(1)">{{responseMap[step].r1}}</button>
   <button ion-button type="button" class="q-btn" id="q-2" (click)="buttonPressed(2)">{{responseMap[step].r2}}</button>
-  <p>I: {{iCount}}</p>
-  <p>E: {{eCount}}</p>
-  <p>S: {{sCount}}</p>
-  <p>N: {{nCount}}</p>
-  <p>T: {{tCount}}</p>
-  <p>F: {{fCount}}</p>
-  <p>J: {{jCount}}</p>
-  <p>P: {{pCount}}</p>
+  <div class="counter">
+    <p>E: {{eCount}} I: {{iCount}} S: {{sCount}} N: {{nCount}} T: {{tCount}} F: {{fCount}} J: {{jCount}} P: {{pCount}}</p>
+  </div>
+  <button ion-button (click)="resetQuiz()">Reset</button>
 </ion-content>
