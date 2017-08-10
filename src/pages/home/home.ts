@@ -10,9 +10,7 @@ import { MbtiProvider } from '../../providers/mbti/mbti';
 export class HomePage {
 
   step = 1;
-
   responseMap: any;
-
   eCount = 0;
   iCount = 0;
   sCount = 0;
@@ -21,6 +19,7 @@ export class HomePage {
   fCount = 0;
   jCount = 0;
   pCount = 0;
+  results = "";
 
   constructor(public navCtrl: NavController,
               public mbtiProvider: MbtiProvider) {
@@ -45,26 +44,26 @@ export class HomePage {
     if (this.step < 70) {
       this.step++
     } else {
-      var results = "";
+      
       if (this.iCount > this.eCount) {
-        results += "I";
+        this.results += "I";
       } else {
-        results += "E";
+        this.results += "E";
       }
       if (this.sCount > this.nCount) {
-        results += "S";
+        this.results += "S";
       } else {
-        results += "N";
+        this.results += "N";
       }
       if (this.tCount > this.fCount) {
-        results += "T";
+        this.results += "T";
       } else {
-        results += "F";
+        this.results += "F";
       }
       if (this.jCount > this.pCount) {
-        results += "J";
+        this.results += "J";
       } else {
-        results += "P";
+        this.results += "P";
       }
       console.log("quiz finished, you are " + results);
     }

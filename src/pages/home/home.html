@@ -5,9 +5,10 @@
 </ion-header>
 
 <ion-content>
-  <h1 style="text-align:center;">{{responseMap[step].q}}</h1>
-  <button ion-button type="button" class="q-btn" id="q-1" (click)="buttonPressed(1)">{{responseMap[step].r1}}</button>
-  <button ion-button type="button" class="q-btn" id="q-2" (click)="buttonPressed(2)">{{responseMap[step].r2}}</button>
+  <h1 *ngIf="results != ''" style="text-align:center;">{{results}}</h1>
+  <h1 *ngIf="results == ''" style="text-align:center;">{{responseMap[step].q}}</h1>
+  <button *ngIf="results == ''" ion-button type="button" class="q-btn" id="q-1" (click)="buttonPressed(1)">{{responseMap[step].r1}}</button>
+  <button *ngIf="results == ''" ion-button type="button" class="q-btn" id="q-2" (click)="buttonPressed(2)">{{responseMap[step].r2}}</button>
   <div class="counter">
     <p>E: {{eCount}} I: {{iCount}} S: {{sCount}} N: {{nCount}} T: {{tCount}} F: {{fCount}} J: {{jCount}} P: {{pCount}}</p>
   </div>
