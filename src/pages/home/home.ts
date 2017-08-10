@@ -65,7 +65,7 @@ export class HomePage {
       } else {
         this.results += "P";
       }
-      console.log("quiz finished, you are " + results);
+      console.log("quiz finished, you are " + this.results);
     }
     var letter = '';
 
