@@ -37,6 +37,7 @@ export class HomePage {
     this.fCount = 0;
     this.jCount = 0;
     this.pCount = 0;
+    this.results = "";
   }
 
   buttonPressed(i) {
